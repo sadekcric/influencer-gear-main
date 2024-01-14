@@ -29,8 +29,10 @@ nav ul li:hover{
 
 /* Header part */
 header{
+
   padding-top: 30px;
   width: 80%;
+  height: 750px;
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   color: var(--dark-1);
@@ -71,9 +73,8 @@ nav img{
 
 /* mobile layout */
 .mobile{
-  
   display: none;
-  height:calc(100vh - 50px);
+  margin-bottom: 50px;
 }
 
 #nav_icon{
@@ -97,6 +98,7 @@ nav img{
 
 .mobile_ul{
    display: none;
+   height:100vh;
 }
 
 #mobile_menu li{
@@ -106,13 +108,73 @@ nav img{
 }
 
 /* Header Poster */
+.poster{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.poster_title{
+  max-width: 600px;
+}
+.poster_title h1{
+  color: var(--dark-1);
+font-size:3.25rem;
+font-weight: 700;
+line-height: 70px; 
+}
+
+.poster_title p{
+  color: var(--dark-1);
+font-weight: 600;
+margin: 20px 0;
+}
+.btn{
+  background-color: #E02C6D;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px 20px;
+  border-radius: 50px;
+  border: none;
+}
+.btn_span{
+  padding-right: 8px;
+}
+.poster_img{
+  background-image: url('resource/images/Circle\ design.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:20px
+
+}
+.poster_img img{
+  width: 103%;
+  padding:50px;
+  
+  
+  
+}
 
 
 
 
-
-
-
+/* Media query for small device */
+@media screen and (max-width:620px){
+  header{
+    
+    width: 100%;
+    padding:10px;
+    height: auto;
+    text-align: center;
+  }
+  .poster{
+    flex-direction: column-reverse;
+    gap:50px
+  }
+}
 
 @media screen and (max-width:900px) {
   .desktop{
@@ -121,4 +183,14 @@ nav img{
   .mobile{
     display: block;
   }
+
+  .btn{
+    margin: auto;
+  }
+
+}
+
+/* Media Query for Medium Device */
+@media screen and (min-width:620px) and (max-width:1020px){
+
 }
