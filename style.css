@@ -318,7 +318,42 @@ margin: 0 auto;
 }
 
 
+/* footer */
+footer{
+  width: 100%;
+  background: #0A0826;
+  color:#fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  
+}
 
+footer h2{
+  font-family: 'Poppins', sans-serif;
+font-size: 2rem;
+font-weight: 700;
+letter-spacing: .2rem;
+text-align: center;
+}
+
+footer h6{
+  color:#D9DBE1;
+  font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+font-weight: 700;
+line-height: 24px; 
+margin-top: 15px;
+letter-spacing: .05rem;
+}
+
+footer ul{
+  margin-top: 30px;
+  display: flex;
+  gap:30px;
+}
 
 
 
@@ -366,6 +401,9 @@ margin: 0 auto;
   .popular_card{
     width: 95%;
   }
+  .see_more{
+    margin-right: 10px;
+  }
 
   /* featured section */
   .featured_section{
@@ -379,6 +417,15 @@ margin: 0 auto;
   
   .feature_btn button{
     margin: 0 auto;
+  }
+
+  /* footer */
+  footer{
+    height: 300px;
+  }
+
+  footer h2, footer h6{
+    letter-spacing: 0;
   }
 }
 
@@ -415,6 +462,10 @@ margin: 0 auto;
    /* popular collection */
    .popular_collection{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .see_more{
+    margin-right: 10px;
   }
 
   /* featured section */
