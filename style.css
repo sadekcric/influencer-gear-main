@@ -47,6 +47,7 @@ nav h4{
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .desktop{
   display: block;
   display: flex;
@@ -167,6 +168,8 @@ margin: 20px 0;
   padding:50px;
 }
 
+
+
 /* main part */
 /* sponsor section */
 main{
@@ -174,9 +177,11 @@ main{
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
 }
+
 .sponsor{
   margin:100px 0;
 }
+
 .sponsor_list{
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -187,6 +192,7 @@ main{
   align-items: center;
   box-shadow: 0 0 10px #ddd;
 }
+
 .sponsor_img{
   width: 100%;
 }
@@ -217,6 +223,7 @@ main{
   border-radius: 5px;
 }
 
+.featured_img img,
 .popular_card > img{
   width: 100%;
 }
@@ -254,6 +261,7 @@ margin: 0 auto;
   align-items: center;
   justify-content: right;
   margin: 30px 0 120px;
+  margin-right: 70px;
 }
 
 .see_more a{
@@ -263,6 +271,53 @@ margin: 0 auto;
   
   
 }
+
+/* featured products */
+.featured_section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:0 30px;
+  margin-bottom: 120px;
+}
+
+.featured_img{
+  min-width: 450px;
+}
+
+.feature h2{
+  color: var(--dark-1);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.38rem;
+  font-weight: 700;
+  line-height: 60px; 
+}
+
+.feature p{
+  color:var(--ash);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 28px; 
+  margin: 20px 0;
+  max-width: 750px;
+}
+
+
+.feature_btn button{
+  font-family: 'Poppins', sans-serif;
+  background-color: #E02C6D;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px 25px;
+  width: 135px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+
 
 
 
@@ -311,6 +366,20 @@ margin: 0 auto;
   .popular_card{
     width: 95%;
   }
+
+  /* featured section */
+  .featured_section{
+    flex-direction: column-reverse;
+    text-align: center;
+    gap:50px;
+  }
+  .featured_img{
+    min-width: inherit;
+  }
+  
+  .feature_btn button{
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width:700px) and (max-width:900px) {
@@ -346,6 +415,21 @@ margin: 0 auto;
    /* popular collection */
    .popular_collection{
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* featured section */
+  .featured_section{
+    flex-direction: column-reverse;
+    text-align: center;
+    gap:50px;
+  }
+
+  .featured_img{
+    min-width: inherit;
+  }
+  
+  .feature_btn button{
+    margin: 0 auto;
   }
 
 }
