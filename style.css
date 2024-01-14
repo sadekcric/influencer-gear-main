@@ -153,18 +153,41 @@ margin: 20px 0;
 .poster_img img{
   width: 103%;
   padding:50px;
-  
-  
-  
 }
+
+/* main part */
+/* sponsor section */
+main{
+  width: 80%;
+  margin: 0 auto;
+}
+.sponsor{
+  margin:120px 0;
+}
+.sponsor_list{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap:10px;
+  border:2px solid #ddd;
+  padding:20px 20px 10px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 0 10px #ddd;
+}
+
+
+
+
+
+
 
 
 
 
 /* Media query for small device */
 @media screen and (max-width:620px){
+  /* Header */
   header{
-    
     width: 100%;
     padding:10px;
     height: auto;
@@ -173,6 +196,16 @@ margin: 20px 0;
   .poster{
     flex-direction: column-reverse;
     gap:50px
+  }
+  /* main */
+  main{
+    width: 100%;
+    padding:10px;
+  }
+  /* sponsor section */
+  .sponsor_list{
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
   }
 }
 
